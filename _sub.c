@@ -10,7 +10,7 @@ void _sub(stack_t **stack, unsigned int line_number)
 
 	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
 
-		more_err(8, line_number, "sub");
+		more_error(8, line_number, "sub");
 
 	(*stack) = (*stack)->next;
 	sum = (*stack)->n - (*stack)->prev->n;
