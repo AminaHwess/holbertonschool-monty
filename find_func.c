@@ -22,6 +22,7 @@ void find_func(char *opcode, char *value, int ln)
 		{"sub", _sub},
 		{"mul", _mul},
 		{"div", _div},
+		{"mod", _mod},
 		{NULL, NULL}};
 
 	for (m = 1, i = 0; func_list[i].opcode != NULL; i++)
