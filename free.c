@@ -1,6 +1,7 @@
 #include "monty.h"
 /**
- * free_nodes _ frees nodes in the stack. 
+ * free_nodes - frees nodes in the stack.
+ * Return: void.
  */
 void free_nodes(void)
 {
