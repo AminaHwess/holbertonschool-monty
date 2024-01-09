@@ -11,7 +11,7 @@ void _add(stack_t **stack, unsigned int line_number)
 
 	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
 	{
-		error(8, line_number, "add");
+		more_error(8, line_number, "add");
 	}
 	sum = (*stack)->n + (*stack)->next->n;
 	(*stack)->next->n = sum;
